@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><b>Project B: Explainer Page</b></title>
+
+  </head>
+
+  <body>
+    <h1>Project B: Explainer Page</h1>
+    <h2>Motivation</h2>
+    <ul>
+    	<li><b>What is our dataset?</b></li>
+    	<p>We used the dataset called 'NYPD Motor Vehicle Collisions' which describes the collision in NYC by using location and injury, each record represents a collision in NYC by city,borough, precinct and cross street,this data can be used by the public to see how dangerous/safe intersections are in NYC, it includes 1.26M rows and 29 columns. We used API to get the data instead of downloading csv file because of keeping data integrity.</p>
+
+        <li><b>Why did you choose this/these particular dataset(s)</b></li>
+        <p>At the first time we got this dataset we found that this dataset is easy to understand and interesting to explore,it has suitable amount of observation and attributes, the data Integrity is preferable to handle with, besides that, it has coordinate attributes so that we can use different type of graph(e.g GeoMap) to show the most meaningful imformation.</p>
+
+    	<li><b>What was your goal for the end user's experience?</b></li>
+    	<p>The goal of user's experience is that the use can operate on the graph, which include select the specific area of NYC to check its Motor Vehicle Collisions and they are also should be shown the dynamic line chart to show the changing curve with time passing.</p>
+    </ul>
+
+    <h2>Basic stats</h2>
+    <ul>
+    	<li><b>Write about your choices in data cleaning and preprocessing</b></li>
+    	<p> 1) Since the data intergrity is preferable, some records still have missing corresponding coordinate among our dataset, so of the map showing, we just extract the observation which has intact data.</p>
+    	<p> 2) We realized the format of time in the dataset is too long to show suitbally on our map,and we also want to sort the time, so first we parse the original time format to integer which in order to sort by increasing order,and then we convert the ranked integer to the desired format. The final format that we want is 'yyyy-mm-dd'.</p>
+
+        <li><b>Write a short section that discusses the dataset stats, containing key points/plots from your exploratory data analysis.</b></li>
+        <p>The core idea of analysing this dataset is the collision and injury by location to understand which area has the heaviest accidental situation, and we also focus on the variation of accident during time changing,so that the key attributes is the coordinate and time </p>
+    </ul>
+
+    <h2>Genre</h2>
+    <ul>
+    	<li><b>Which tools did you use from each of the 3 categories of Visual Narrative (Figure 7 in Segal and Heer). Why?</b></li>
+    	<p> We used Consistent Visual Platform of Visual Nrrative, even though the data will be changed every time the user select, but the background platform will not be changed.
+
+        <li><b>Which tools did you use from each of the 3 categories of Narrative Structure (Figure 7 in Segal and Heer). Why?</b></li>
+        <p> 1. As for the Narrative Structure, we used the following tools of Interactivity:
+        	<p> &nbsp;&nbsp;&nbsp;&nbsp;1).Navigation Button: We have a button to which can be selected different area by user, this button is used for showing the corresponding map area when the user clicked and select.</p>
+        	<p> &nbsp;&nbsp;&nbsp;&nbsp;2)Filtering / Selection: As we have mentioned above, the function of button is selecting and filtering.</p>
+
+          <p>2.Besides that , we also use the following tools of Messaging:
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;1)Captions/Headline: We had the total title of the graph page.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;3)Annotation: Since we have the map function, so that we used different colors to distinguish different area of NYC, and we also have annotation with corresponding area to help user having the betterunderstanding.</p>
+        </p>
+    </ul>
+
+    <h2>Visualizations</h2>
+    <ul>
+    	<li><b>Explain the visualizations you've chosen?</b></li>
+        <p>We have chosen GeoMap, and dynamic line chart.</p>
+
+        <li><b>Why are they right for the story you want to tell?</b></li>
+        <p>First of all, our dataset is talking about the situation in NYC, which is a geography area, so the best way to show geography is map, and as for line chart, the line chart can implement the trend clearly among the time line.</p>
+    </ul>
+
+
+    
+    <h2>Discussion</h2>
+    <ol>
+    	<li><b>What went well?</b></li>
+        <p>1.The map is showning commendablly and Collisions can be checked in different area by using selection function with data points, and this function is achieved by clicking the button and selection list. </p>
+        <p>2. The line charts shows the data well with time-line axis.</p>
+        <li><b>What is still missing? What could be improved?, Why?</b></li>
+        <p>The dynamic chart couldn't be changed by clicking area. </p>
+    </ol>
+
+    
+    <h2>Contribution</h2>
+    <p>During the process of project, we have good team cooperation, we discussed the idea and finish the draft, and go through each element of whole project together,WenHao Li take the main response of data story, Chen Wang take the main response of the explainer page.</p>
+
+
+  </head>
+
+  </body>
+</html
