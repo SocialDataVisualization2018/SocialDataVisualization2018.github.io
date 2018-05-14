@@ -1,0 +1,29 @@
+svg {
+  margin-left: 200px;
+  margin-right: 170px;
+  padding: 1em;
+  overflow: hidden;
+}
+.point{
+  fill: "black";
+  stroke: "gray";
+  stroke-width": 0.25;
+  opacity": 0.75;
+}
+
+}
+.ProductSelector{
+  position:absolute;
+  width: 150px;
+  top: 300px;
+  left:300px;
+}
+#legend{
+  width:90px;
+  height:200px;
+}
+.legend {
+  font-size: 12px;
+  font-weight: normal;
+  text-anchor: left;
+}
